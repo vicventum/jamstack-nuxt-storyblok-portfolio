@@ -1,0 +1,8 @@
+# Ignore local dev TLS cert and key
+/localhost-key.pem
+/localhost.pem
+node_modules/
+dist/
+.nuxt/
+.output/
+.env

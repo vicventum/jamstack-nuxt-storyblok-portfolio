@@ -1,0 +1,16 @@
+{
+	"name": "jamstack-nuxt-storyblock",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt dev",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"ssl-proxy": "npx --yes local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
+		"generate-cert": "sh scripts/generate-local-cert.sh"
+	},
+	"dependencies": {
+		"@storyblok/nuxt": "^8.2.2",
+		"nuxt": "^3.20.1"
+	}
+}
