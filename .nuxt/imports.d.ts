@@ -32,4 +32,3 @@ export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composab
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useStoryblok, useStoryblokApi, useStoryblokBridge, renderRichText, StoryblokRichText, useStoryblokRichText, MarkTypes, BlockTypes, LinkTypes, AssetTypes, StoryblokRichTextResolvers, StoryblokRichTextDocumentNode, StoryblokRichTextImageOptimizationOptions, StoryblokRichTextNode, StoryblokRichTextNodeResolver, StoryblokRichTextNodeTypes, StoryblokRichTextOptions } from '@storyblok/vue';
 export { useAsyncStoryblok } from '../node_modules/@storyblok/nuxt/dist/runtime/composables/useAsyncStoryblok';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
