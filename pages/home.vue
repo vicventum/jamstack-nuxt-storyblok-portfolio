@@ -1,10 +1,9 @@
 <script setup>
-const story = await useStoryblok('home')
-console.log('🚀 ~ story:', story)
+const story = await useStoryblok('home', {
+	version: 'draft',
+})
 </script>
 
 <template>
-	<div style="">
-		<h1>{{ story }}</h1>
-	</div>
+	<StoryblokComponent v-if="story" :blok="story.content" />
 </template>

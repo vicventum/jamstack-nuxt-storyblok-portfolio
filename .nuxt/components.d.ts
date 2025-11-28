@@ -14,6 +14,10 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const FeaturedProjects: typeof import("../storyblok/FeaturedProjects.vue")['default']
+export const Hero: typeof import("../storyblok/Hero.vue")['default']
+export const Page: typeof import("../storyblok/Page.vue")['default']
+export const Projects: typeof import("../storyblok/Projects.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -37,6 +41,10 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyFeaturedProjects: LazyComponent<typeof import("../storyblok/FeaturedProjects.vue")['default']>
+export const LazyHero: LazyComponent<typeof import("../storyblok/Hero.vue")['default']>
+export const LazyPage: LazyComponent<typeof import("../storyblok/Page.vue")['default']>
+export const LazyProjects: LazyComponent<typeof import("../storyblok/Projects.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
