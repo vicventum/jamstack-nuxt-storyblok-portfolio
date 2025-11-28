@@ -1,0 +1,7 @@
+[build]
+  command = "npm run generate"
+  publish = ".output/public"
+
+[context]
+  # Use local Netlify build image features if needed
+  NODE_VERSION = "18"

@@ -3,9 +3,10 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
 	ssr: true,
 	nitro: {
-		prerender: {
-			failOnError: false,
-		},
+		preset: 'netlify',
+		// prerender: {
+		// 	failOnError: false,
+		// },
 	},
 	app: {
 		head: {

@@ -6,6 +6,7 @@
 		"dev": "nuxt dev",
 		"build": "nuxt build",
 		"start": "nuxt start",
+		"pregenerate": "mkdir -p .netlify/functions-internal/server",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"ssl-proxy": "npx --yes local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
