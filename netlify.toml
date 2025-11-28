@@ -1,0 +1,7 @@
+[build]
+  command = "npm run generate"
+  publish = ".output/public"
+
+[context.production.environment]
+  # Fuerza Nuxt/Nitro a generar estático en Netlify en lugar de usar el preset `netlify-legacy`
+  NITRO_PRESET = "static"
